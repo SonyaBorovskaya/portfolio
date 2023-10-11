@@ -1,0 +1,42 @@
+.modal {
+	position: fixed;
+	inset:0;
+	background-color: rgba(255,255,255, 0.5);
+	/* прописываем flex, чтобы окно распологалось посередине не только по вертикале, но и горизонтале
+	Из свойства  .modal__main - 	margin:auto*/
+	/* display:flex; */
+	cursor:pointer;
+	padding: 30px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	display: none;
+	transition: all 300ms ease 0s;
+}
+.modal__main {
+	position: relative;
+	/* max-width:600px; */
+	margin:auto; 
+color:#fff;
+cursor:default;
+}
+
+.modal__close{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+font-size: 22px;
+position: absolute;
+top:10px;
+right:10px;
+outline: 1px solid transparent;
+outline-offset:3px; 
+transition: outline-color 300ms ease-in-out;
+border-radius: 3px;
+padding:0;
+text-align: center;
+display: block;
+width:30px; 
+height:30px;
+color: #fff;
+}
+
