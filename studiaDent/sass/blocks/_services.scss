@@ -1,0 +1,83 @@
+
+.price-title{
+text-align: center;
+margin-top: 25px;}
+.price-item__title{
+	text-align: center;
+	position: relative;
+	p{
+	font-size: 25px;
+line-height: 95.5%;}
+img{
+width:20px; 
+height: 35px;}
+	
+	}
+	.price-items{
+		margin-top: 46px;
+	}
+	.price-item__title:after, .price-item__title:before{
+		content: ''; 
+		
+			position: absolute;
+			display: block;
+			bottom: -12px;
+			right:0;
+			height:1px; 
+			background-color: #A2C2CF;
+			width:100%;
+			
+	}
+	.price-item__title:after{
+			bottom: -12px;
+			right:0;	
+	}
+	.price-item__title:before{
+		top: -12px;
+			right:0;	
+	}
+.price-service{
+margin-top:25px;
+padding-bottom:42px;}
+
+.price-item__title-img{
+		position: relative;
+		display: block;	
+		margin:0 auto;
+	}
+	.price-item__title-img:after {
+		content:""; 
+		margin:0 auto;
+			position: absolute;
+			display: inline-block;
+			top:-10px; 
+			right:-40px;
+			height:6px; 
+			background-color: red;
+			width:40%;
+	}
+	.price-service{
+	display: flex;
+	flex-direction: column;
+	row-gap:15px;
+	}
+	.price-service__item{
+		
+	display: flex;
+	justify-content:space-between;
+	flex-direction: row;
+	align-items: center;
+
+	}
+	.service-form{
+		display:flex;
+		column-gap: 25px;
+		justify-content: center;
+		margin:0 auto;}
+		.service-title{
+		text-align: center;
+		margin-bottom: 30px;
+		margin-top:15px;
+		}
+	.price-service__name{}
+

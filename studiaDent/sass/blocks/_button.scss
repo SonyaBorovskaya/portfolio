@@ -1,0 +1,64 @@
+.btn-block{
+}
+
+
+.btn-wrapper{
+--height:60px;
+--width:296px;
+--size-left: 24px;
+height: var(--height);
+width:var(--width);
+// line-height: var(--height);
+background-color:$boton-color;
+transition: 200ms background-color ease-out ;
+}
+.btn-wrapper:hover{
+   background: rgba(56,188,234, 0.5);
+
+}
+.btn{
+color:#FFFFFF;
+font-size: 20px;
+text-align: center;
+font-weight: 400;
+width:100%;
+height:100%;
+transition: 300ms all ease-out ;
+}
+
+.btn:hover{
+color:#08151d;
+}
+// кнопка "Показать больше"
+.morecontent span {
+   display: none;
+}
+.morelink {
+   display: flex;
+   justify-content: center;
+   padding:10px 15px;
+   margin-top:10px;
+   background-color: #CCEEFE;
+}
+.btn-popup{
+	width: 157px;
+height: 44px;
+	background-color:$boton-color ;
+	border-radius: 10px;
+	// pointer-events: none;
+	p{
+	color:#FFFFFF}	
+}
+.btn-review{
+	background-color: $boton-color;
+	width: 190px;
+	height: 52px;
+	border-radius: 7px;
+	text-align: center;
+	color:#fff;
+	transition: 0.3s all ease-in;
+	display: block;
+}
+.btn-review:hover{
+opacity: 0.5;
+}

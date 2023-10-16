@@ -1,0 +1,17 @@
+
+.header-items{
+   display:flex; 
+   align-items:center;
+   justify-content: space-between;
+}
+.menu-header{
+	align-self: center;
+}
+.header-item{
+   
+   flex-grow:0;
+   flex-shrink: 1;
+}
+.header-item-center{
+   align-self: center;
+}

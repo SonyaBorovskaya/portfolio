@@ -1,0 +1,43 @@
+//переменные
+@import "./base/vars";
+//reset
+@import "./base/reset";
+//base
+@import "./base/base";
+//Blocks
+@import './blocks/header';
+@import './blocks/header-top';
+@import './blocks/logo';
+@import './blocks/header-contacts';
+@import './blocks/calendar';
+@import './blocks/button';
+@import './blocks/menu';
+@import './blocks/home';
+@import './blocks/title';
+@import './blocks/title-subtext';
+@import './blocks/home-bottom';
+@import './blocks/workers';
+@import './blocks/worker-card';
+@import "./blocks/news";
+@import './blocks/news-grid';
+@import './blocks/news-item';
+@import './blocks/news-block2';
+@import './blocks/news-block3';
+@import './blocks/advantages';
+@import './blocks/advantages-grid';
+@import './blocks/advantages-item';
+@import './blocks/perebivka';
+@import './blocks/reviews';
+@import './blocks/slider-reviews';
+@import './blocks/popupRequest';
+@import './blocks/popupRequest-content';
+@import './blocks/sign-login';
+@import './blocks/signup';
+@import './blocks/popup_review';
+@import './blocks/review-form';
+@import './blocks/footer';
+@import './blocks/services';
+@import './blocks/serviceInsert';
+
+
+

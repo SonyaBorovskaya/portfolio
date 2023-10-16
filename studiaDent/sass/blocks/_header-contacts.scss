@@ -1,0 +1,41 @@
+.loc {
+	grid-area: loc;
+}
+.ph {
+	grid-area: ph;
+}
+.cl {
+	grid-area: cl;
+}
+
+.contact-items{
+	display:grid; 
+	grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(40px, auto);
+    grid-template-areas:
+	"loc cl"
+   "ph .";
+	row-gap: 6px;
+	column-gap: 24px;
+}
+
+.contact-item{
+   display: flex;
+	font-weight: 300;
+	
+p{
+   text-align: left;
+}
+}
+.contact-item__img{
+   width:20px; 
+   height:20px;
+	margin-top: auto;
+margin-bottom: auto;
+margin-right: 5px;
+img{
+width:18px;}
+}
+.contact-item__text{
+line-height: 1.3em;
+}
