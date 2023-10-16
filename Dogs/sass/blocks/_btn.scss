@@ -1,0 +1,31 @@
+.btn, a.btn{
+   // padding:20px 52px;
+   padding:20px 0;
+   width: 220px;
+   background-color: $accent-color;
+   color:$main-color;
+   font-weight: 500;
+   text-transform: uppercase;
+   border-radius:40px;
+   font-size:16px;
+   display: flex;
+justify-content: center;
+align-items: center;
+transition:background 0.3s cubic-bezier(.02,.17,.25,1);
+}
+
+.btn--white,a.btn--white {
+   background-color: $main-color;
+   border:1px solid rgba($accent-color, 0.4);
+   color:$accent-color;
+}
+.cta-column__buttons{
+
+   a.btn:hover{
+      background-color:$grey-color;
+   }
+   a.btn--white:hover{
+      background-color: #FFE4EB;
+      border:1px solid transparent;
+   }
+}

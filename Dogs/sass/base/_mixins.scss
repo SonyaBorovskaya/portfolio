@@ -1,0 +1,19 @@
+//Шрифт
+@mixin FontCSS($size:16px,$color:#444444,$weight:300,$lineHeight:162%,$letterSpacing:0){
+      font-size: $size;
+      color:$color; 
+      font-weight:$weight;
+      line-height:$lineHeight;
+      letter-spacing: $letterSpacing;
+
+} 
+
+@mixin Flex{
+   display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ -webkit-justify-content: space-between;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}

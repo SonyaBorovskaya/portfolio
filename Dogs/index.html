@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./img/logo/icon.svg" type="image/svg">
+   <meta name="description" content="Помогаем людям и питомцам из приютов встретиться и стать друзьями на всю жизнь">
+   <link rel="stylesheet" href="./css/main.css">
+   <title>Четыре лапы</title>
+</head>
+
+<body class="">
+
+   <header class="header">
+      <div class=" container container--big">
+         <div class="header-navigation">
+            <div class="header-menu">
+               <nav class="header-navigation__items">
+                  <div class="logo header-logo">
+                     <a href="">
+                        <img src="./img/logo/logo.svg" alt="Четыре лапы" title="Логотип">
+                     </a>
+                  </div>
+                  <div class="header-menu__map-list">
+                     <ul class="header-menu__maps">
+                        <li class="header-menu__map">
+                           <a href="#cta" class="header-menu__link" id="link-1">о приюте</a>
+                        </li>
+                        <li class="header-menu__map">
+                           <a href="#pets" class="header-menu__link" id="link-2">питомцы</a>
+                        </li>
+                        <li class="header-menu__map">
+                           <a href="#advice" class="header-menu__link" id="link-3">полезные советы</a>
+                        </li>
+                        <li class="header-menu__map">
+                           <a href="#connect" class="header-menu__link" id="link-4">контакты</a>
+                        </li>
+
+                     </ul>
+                  </div>
+                  <div class="header-menu__contact-list">
+                     <ul class="header-menu__contacts">
+                        <li class="header-menu__contact">
+                           <a href="">
+                              <svg class="contact-icon contacts--red" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M16.8503 0H7.14973C3.20735 0 0 3.20735 0 7.14973V16.8503C0 20.7926 3.20735 24 7.14973 24H16.8503C20.7926 24 24 20.7926 24 16.8503V7.14973C24 3.20735 20.7926 0 16.8503 0ZM21.5856 16.8503C21.5856 19.4655 19.4655 21.5856 16.8503 21.5856H7.14973C4.5345 21.5856 2.4144 19.4655 2.4144 16.8503V7.14973C2.4144 4.53446 4.5345 2.4144 7.14973 2.4144H16.8503C19.4655 2.4144 21.5856 4.53446 21.5856 7.14973V16.8503Z" />
+                                 <path
+                                    d="M12 5.79297C8.57729 5.79297 5.79272 8.57754 5.79272 12.0002C5.79272 15.4228 8.57729 18.2074 12 18.2074C15.4227 18.2074 18.2072 15.4229 18.2072 12.0002C18.2072 8.57749 15.4227 5.79297 12 5.79297ZM12 15.7931C9.90523 15.7931 8.20712 14.095 8.20712 12.0002C8.20712 9.90547 9.90527 8.20737 12 8.20737C14.0947 8.20737 15.7928 9.90547 15.7928 12.0002C15.7928 14.0949 14.0947 15.7931 12 15.7931Z" />
+                                 <path
+                                    d="M18.2193 7.32683C19.0408 7.32683 19.7067 6.6609 19.7067 5.83944C19.7067 5.01798 19.0408 4.35205 18.2193 4.35205C17.3979 4.35205 16.7319 5.01798 16.7319 5.83944C16.7319 6.6609 17.3979 7.32683 18.2193 7.32683Z" />
+                              </svg>
+                           </a>
+                        </li>
+                        <li class="header-menu__contact">
+                           <a href="">
+                              <svg class="contact-icon contacts--red" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <mask id="mask0_2_271" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                    width="24" height="24">
+                                    <rect width="24" height="24" />
+                                 </mask>
+                                 <g mask="url(#mask0_2_271)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                       d="M23.4493 5.77512C23.6161 5.21306 23.4493 4.80005 22.6553 4.80005H20.0297C19.3621 4.80005 19.0543 5.15683 18.8874 5.55025C18.8874 5.55025 17.5521 8.83829 15.6606 10.9741C15.0487 11.5923 14.7705 11.789 14.4367 11.789C14.2698 11.789 14.0282 11.5923 14.0282 11.0303V5.77512C14.0282 5.10065 13.8345 4.80005 13.2781 4.80005H9.15213C8.73494 4.80005 8.48403 5.11309 8.48403 5.40977C8.48403 6.04916 9.42974 6.19661 9.52722 7.99522V11.9015C9.52722 12.7579 9.37413 12.9132 9.04032 12.9132C8.15023 12.9132 5.98507 9.61049 4.70093 5.83131C4.44927 5.09676 4.19686 4.80005 3.52583 4.80005H0.900217C0.150043 4.80005 0 5.15683 0 5.55025C0 6.25284 0.89014 9.73759 4.14464 14.3464C6.31429 17.4939 9.37118 19.2 12.1528 19.2C13.8218 19.2 14.0283 18.8211 14.0283 18.1684V15.7895C14.0283 15.0316 14.1864 14.8804 14.7149 14.8804C15.1043 14.8804 15.7719 15.0771 17.3296 16.5946C19.1099 18.3932 19.4034 19.2 20.4047 19.2H23.0304C23.7805 19.2 24.1556 18.8211 23.9392 18.0733C23.7024 17.3279 22.8525 16.2466 21.7247 14.9647C21.1127 14.234 20.1947 13.4472 19.9165 13.0537C19.5271 12.5479 19.6384 12.323 19.9165 11.8734C19.9165 11.8734 23.1155 7.32074 23.4493 5.77512V5.77512Z" />
+                                 </g>
+                              </svg>
+
+                           </a>
+                        </li>
+                        <li class="header-menu__contact">
+                           <a href="">
+                              <svg class="contact-icon contacts--red" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <mask id="mask0_2_274" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                    width="24" height="24">
+                                    <rect width="24" height="24" />
+                                 </mask>
+                                 <g mask="url(#mask0_2_274)">
+                                    <path
+                                       d="M23.5468 1.49689C23.1374 1.15345 22.4944 1.10431 21.8295 1.36837H21.8285C21.1292 1.64593 2.03537 9.74811 1.25808 10.0791C1.11671 10.1277 -0.118008 10.5835 0.00917513 11.5987C0.122712 12.514 1.11507 12.8931 1.23625 12.9368L6.09049 14.5811C6.41255 15.6417 7.59977 19.5545 7.86233 20.3905C8.02608 20.9116 8.293 21.5963 8.7608 21.7372C9.17127 21.8938 9.57957 21.7507 9.84376 21.5455L12.8116 18.8223L17.6025 22.5186L17.7166 22.5861C18.0419 22.7287 18.3536 22.8 18.6511 22.8C18.8809 22.8 19.1014 22.7573 19.3121 22.672C20.0299 22.3804 20.317 21.7038 20.347 21.6271L23.9256 3.22543C24.144 2.24263 23.8405 1.74259 23.5468 1.49689ZM10.3716 15.2388L8.73405 19.5589L7.0965 14.1588L19.6511 4.97882L10.3716 15.2388Z" />
+                                 </g>
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <button class="mobile-nav-button" type="button">
+                     <span class="mobile-nav-button__icon"></span>
+                  </button>
+                  <!--  -->
+                  <div class="mobile-nav__logo">
+                     <a href="">
+                        <img src="./img/logo/logo.svg" alt="Четыре лапы" title="Логотип">
+                     </a>
+                  </div>
+                  <!--  -->
+                  <div class="mobile-nav">
+                     <nav class="mobile-nav__list">
+                        <ul>
+                           <li>
+                              <a href="#cta" class="mobile-nav__link"> О компании</a>
+                           </li>
+                           <li>
+                              <a href="#pets" class="mobile-nav__link">Наши питомцы</a>
+                           </li>
+                           <li>
+                              <a href="#guide" class="mobile-nav__link">КАК забрать питомца домой?</a>
+                           </li>
+                           <li><a href="#advice" class="mobile-nav__link">Полезные советы</a> </li>
+                           <li><a href="#connect" class="mobile-nav__link">контакты</a></li>
+                        </ul>
+                     </nav>
+                     <div class="mobile-nav__info">
+                        <div class="mobile-nav__phone">
+                           <p>8 800 500 50 00</p>
+                        </div>
+                        <div class="mobile-nav__links">
+                           <a href="">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M16.8503 0H7.14973C3.20735 0 0 3.20735 0 7.14973V16.8503C0 20.7926 3.20735 24 7.14973 24H16.8503C20.7926 24 24 20.7926 24 16.8503V7.14973C24 3.20735 20.7926 0 16.8503 0ZM21.5856 16.8503C21.5856 19.4655 19.4655 21.5856 16.8503 21.5856H7.14973C4.5345 21.5856 2.4144 19.4655 2.4144 16.8503V7.14973C2.4144 4.53446 4.5345 2.4144 7.14973 2.4144H16.8503C19.4655 2.4144 21.5856 4.53446 21.5856 7.14973V16.8503Z" />
+                                 <path
+                                    d="M12 5.79297C8.57729 5.79297 5.79272 8.57754 5.79272 12.0002C5.79272 15.4228 8.57729 18.2074 12 18.2074C15.4227 18.2074 18.2072 15.4229 18.2072 12.0002C18.2072 8.57749 15.4227 5.79297 12 5.79297ZM12 15.7931C9.90523 15.7931 8.20712 14.095 8.20712 12.0002C8.20712 9.90547 9.90527 8.20737 12 8.20737C14.0947 8.20737 15.7928 9.90547 15.7928 12.0002C15.7928 14.0949 14.0947 15.7931 12 15.7931Z" />
+                                 <path
+                                    d="M18.2193 7.32683C19.0408 7.32683 19.7067 6.6609 19.7067 5.83944C19.7067 5.01798 19.0408 4.35205 18.2193 4.35205C17.3979 4.35205 16.7319 5.01798 16.7319 5.83944C16.7319 6.6609 17.3979 7.32683 18.2193 7.32683Z" />
+                              </svg>
+                           </a>
+                           <!--  -->
+                           <a href="">
+                              <img src="./img/socialNetwork/vk.svg" alt="VK">
+                           </a>
+                           <!--  -->
+                           <a href="">
+                              <img src="./img/socialNetwork/telegram-grey.svg" alt="Telegram">
+                           </a>
+                           <!--  -->
+                        </div>
+                     </div>
+                     <div class="mobile-nav__btn">
+                        <a class="btn" href="">взять питомца</a>
+                        <a class="btn btn--white" href="">помочь приюту</a>
+                     </div>
+                  </div>
+                  <!--//Мобильное меню ------------------ -->
+
+
+               </nav>
+            </div>
+
+         </div>
+         <div class="header-content">
+            <div class="header-content__text">
+               <div class="header-content__heading">приют для собак <b>четыре лапы</b></div>
+               <div class="header-content__subtitle">возьми друга <b>домой</b></div>
+            </div>
+         </div>
+      </div>
+      <div class="home-bg-img">
+         <img src="./img/main/bcg.jpg" alt="Фоновое изображение">
+      </div>
+      <div class="home-bg-color">
+      </div>
+
+   </header>
+
+   <section class="cta" id="cta">
+      <div class="container">
+         <div class="cta-content">
+            <div class="cta-columns">
+               <div class="cta-column__text">
+                  <div class="cta-column__heading">Помогаем людям и питомцам из приютов встретиться и стать друзьями на
+                     всю жизнь</div>
+                  <div class="cta-column__subtitle">Миссия проекта - формирование культуры ответственного отношения к
+                     домашним животным. Решение взять кошку или собаку из приюта должно быть осознанным, именно поэтому
+                     мы помогаем потенциальным владельцам не только найти питомца, но и подготовиться к жизни с новым
+                     другом.</div>
+               </div>
+               <div class="cta-column__buttons">
+                  <a class="btn" href="">взять питомца</a>
+                  <a class="btn btn--white" href="">помочь приюту</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="pets" id="pets">
+      <div class="container">
+         <div class="title title-pets">
+            <h1>наши питомцы</h1>
+         </div>
+         <div class="pets-box">
+            <div class="pets-columns">
+               <!-- 1----------------------------------- -->
+               <div class="pets-column">
+                  <div class="pets-column__inner">
+                     <div class="pets-column__content">
+                        <div class="pets-column__col">
+                           <div class="pets-column__info">
+                              <p class="pets-column__subtext">Джек-рассел-терьер</p>
+                              <p class="pets-column__name">Майло</p>
+                              <div class="pets-column__description">
+                                 <p class="pets-column__age">2 года </p>
+                                 <p class="pets-column__gender">Мальчик</p>
+                              </div>
+                           </div>
+                           <div class="pets-column__img-wrapper">
+                              <img class="pets-column__img" src="./img/pets/1.svg" alt="Фото">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--2 ----------------------------------- -->
+               <div class="pets-column">
+                  <div class="pets-column__inner">
+                     <div class="pets-column__content">
+                        <div class="pets-column__col">
+                           <div class="pets-column__info">
+                              <p class="pets-column__subtext">Лабрадор</p>
+                              <p class="pets-column__name">Герта</p>
+                              <div class="pets-column__description">
+                                 <p class="pets-column__age">4 года </p>
+                                 <p class="pets-column__gender">Девочка</p>
+                              </div>
+                           </div>
+                           <div class="pets-column__img-wrapper">
+                              <img class="pets-column__img" src="./img/pets/2.svg" alt="Фото">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- 3---------------------------------------- -->
+               <div class="pets-column">
+                  <div class="pets-column__inner">
+                     <div class="pets-column__content">
+                        <div class="pets-column__col">
+                           <div class="pets-column__info">
+                              <p class="pets-column__subtext">Лабрадор</p>
+                              <p class="pets-column__name">Мартин</p>
+                              <div class="pets-column__description">
+                                 <p class="pets-column__age">1,5 года</p>
+                                 <p class="pets-column__gender">Мальчик</p>
+                              </div>
+                           </div>
+                           <div class="pets-column__img-wrapper">
+                              <img class="pets-column__img" src="./img/pets/3.svg" alt="Фото">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--4 ----------------------------------- -->
+               <div class="pets-column">
+                  <div class="pets-column__inner">
+                     <div class="pets-column__content">
+                        <div class="pets-column__col">
+                           <div class="pets-column__info">
+                              <p class="pets-column__subtext">Мопс</p>
+                              <p class="pets-column__name">Чарли</p>
+                              <div class="pets-column__description">
+                                 <p class="pets-column__age">1 год </p>
+                                 <p class="pets-column__gender">Мальчик</p>
+                              </div>
+                           </div>
+                           <div class="pets-column__img-wrapper">
+                              <img class="pets-column__img" src="./img/pets/4.svg" alt="Фото">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--5-------------------------------------------- -->
+               <div class="pets-column">
+                  <div class="pets-column__inner">
+                     <div class="pets-column__content">
+                        <div class="pets-column__col">
+                           <div class="pets-column__info">
+                              <p class="pets-column__subtext">бигль</p>
+                              <p class="pets-column__name">Линда</p>
+                              <div class="pets-column__description">
+                                 <p class="pets-column__age">1 год</p>
+                                 <p class="pets-column__gender">Девочка</p>
+                              </div>
+                           </div>
+                           <div class="pets-column__img-wrapper">
+                              <img class="pets-column__img" src="./img/pets/5.svg" alt="Фото">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--6 ------------------------------------------- -->
+               <div class="pets-column">
+                  <div class="pets-column__inner">
+                     <div class="pets-column__content">
+                        <div class="pets-column__col">
+                           <div class="pets-column__info">
+                              <p class="pets-column__subtext">джек-рассел-терьер</p>
+                              <p class="pets-column__name">Зельда</p>
+                              <div class="pets-column__description">
+                                 <p class="pets-column__age">0,5 года</p>
+                                 <p class="pets-column__gender">Девочка</p>
+                              </div>
+                           </div>
+                           <div class="pets-column__img-wrapper">
+                              <img class="pets-column__img" src="./img/pets/6.svg" alt="Фото">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--7 ------------------------------------------- -->
+               <div class="pets-column">
+                  <div class="pets-column__inner">
+                     <div class="pets-column__content">
+                        <div class="pets-column__col">
+                           <div class="pets-column__info">
+                              <p class="pets-column__subtext">Золотистый ретривер</p>
+                              <p class="pets-column__name">Пончо</p>
+                              <div class="pets-column__description">
+                                 <p class="pets-column__age">0,5 года</p>
+                                 <p class="pets-column__gender">Мальчик</p>
+                              </div>
+                           </div>
+                           <div class="pets-column__img-wrapper">
+                              <img class="pets-column__img" src="./img/pets/7.svg" alt="Фото">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--8 ------------------------------------------- -->
+               <div class="pets-column">
+                  <div class="pets-column__inner">
+                     <div class="pets-column__content">
+                        <div class="pets-column__col">
+                           <div class="pets-column__info">
+                              <p class="pets-column__subtext">Бульдог</p>
+                              <p class="pets-column__name">Дензел</p>
+                              <div class="pets-column__description">
+                                 <p class="pets-column__age">6 лет</p>
+                                 <p class="pets-column__gender">Мальчик</p>
+                              </div>
+                           </div>
+                           <div class="pets-column__img-wrapper">
+                              <img class="pets-column__img" src="./img/pets/8.svg" alt="Фото">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="guide" id="guide">
+      <div class="container">
+         <div class="guide-content">
+            <div class="title guide-title">
+               <p>Как забрать питомца домой?</p>
+            </div>
+
+            <div class="guide-steps">
+               <div class="guide-col">
+                  <!-- 1------------------------------ -->
+                  <div class="guide-step guide__step">
+                     <div class="guide-step__inner">
+                        <div class="guide-step__col">
+                           <div class="guide-step__num">1</div>
+                           <h3 class="guide-step__head">Выберите</br> питомца</h3>
+                           <div class="guide-step__text">В нашем приюте содержится более 60 собак</div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--2 ----------------------------- -->
+                  <div class="guide-step guide__step">
+                     <div class="guide-step__inner">
+                        <div class="guide-step__col">
+                           <h2 class="guide-step__num">2</h2>
+                           <h3 class="guide-step__head">Оставьте </br>заявку</h3>
+                           <div class="guide-step__text">Через сайт или связавшись с нами любым удобным для вас способом
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- 3----------------------------- -->
+                  <div class="guide-step guide__step">
+                     <div class="guide-step__inner">
+                        <div class="guide-step__col">
+                           <h2 class="guide-step__num">3</h2>
+                           <h3 class="guide-step__head">Пройдите собеседование</h3>
+                           <div class="guide-step__text">Мы заботимся о наших питомцах и отдаем их только в хорошие руки
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--4 ---------------------------- -->
+                  <div class="guide-step guide__step">
+                     <div class="guide-step__inner">
+                        <div class="guide-step__col">
+                           <h2 class="guide-step__num">4</h2>
+                           <h3 class="guide-step__head">Познакомьтесь с собакой</h3>
+                           <div class="guide-step__text">Приезжайте к нам в приют, что бы в живую увидеть вашего питомца
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- 5------------------------------- -->
+                  <div class="guide-step guide__step">
+                     <div class="guide-step__inner">
+                        <div class="guide-step__col">
+                           <h2 class="guide-step__num">5</h2>
+                           <h3 class="guide-step__head">Забирайте друга домой</h3>
+                           <div class="guide-step__text">Мы поможем вам с транспортировкой</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="guide-button">
+               <a class="btn btn__guide" href="">взять питомца</a>
+            </div>
+
+         </div>
+      </div>
+
+   </section>
+   <section class="advice" id="advice">
+      <div class="container">
+         <div class="advice-inner">
+            <div class="title advice__title">полезные советы</div>
+            <div class="advice-items">
+               <!--1 ----------------------- -->
+               <div class="advice-item">
+                  <div class="advice-item__row">
+                     <div class="advice-item__img-wrapper">
+                        <img class="advice-item__img" src="./img/advice/1.svg" alt="Фото">
+                     </div>
+                     <div class="advice-item__text">
+                        <div class="advice-item__heading">
+                           <p>Как уберечь собаку от жары?</p>
+                        </div>
+                        <div class="advice-item__description">
+                           <p>Выгуливайте питомца только рано утром и поздно вечером. Если щенок еще не приучился ходить
+                              в
+                              туалет на улице, используйте дома пеленки. Не выгуливайте собаку в жестком наморднике, а
+                              если
+                              такая необходимость есть, используйте нейлоновый.
+                              Если вы кормите собаку готовыми кормами, можно перейти на облегченные или сократить объем
+                              порции. Важно, чтобы пес имел возможность полежать и отдышаться в прохладном месте.
+                              Некоторые
+                              собаки,чтобы охладиться в жару готовы лезть в ванну с водой или бассейны для собак. </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- 2------------------------- -->
+               <div class="advice-item">
+                  <div class="advice-item__row">
+                     <div class="advice-item__img-wrapper">
+                        <img class="advice-item__img" src="./img/advice/2.svg" alt="Фото">
+                     </div>
+                     <div class="advice-item__text">
+                        <div class="advice-item__heading">
+                           <p>Как отучить щенка грызть все подряд в доме?</p>
+                        </div>
+                        <div class="advice-item__description">
+                           <p> У вашего питомца должно быть достаточно разных игрушек: это могут быть мячики, кольца из
+                              жесткой резины,куски каната, еще что-нибудь. Если ваш питомец начал грызть мебель,
+                              примените
+                              специальные спреи. Они сделаны на основе синтетического перца, безопасны для людей и
+                              зверей,
+                              но на вкус точно не понравятся хвостатому хулигану. Возьмите за правило убирать в
+                              недоступное
+                              для щенка место все предметы, которые могут привлечь его внимание и стать для него
+                              «игрушками».</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--3 ------------------------ -->
+               <div class="advice-item">
+                  <div class="advice-item__row">
+                     <div class="advice-item__img-wrapper">
+                        <img class="advice-item__img" src="./img/advice/3.svg" alt="Фото">
+                     </div>
+                     <div class="advice-item__text">
+                        <div class="advice-item__heading">
+                           <p>Собака не слушается. Что делать?</p>
+                        </div>
+                        <div class="advice-item__description">
+                           <p>Наказания должны присутствовать при обучении и воспитании, но использовать их надо
+                              правильно.
+                              Питомец должен быть наказан, если он того заслужил, но только в момент совершения
+                              «преступления» или же сразу после него. Приучайте выполнять задания с первой команды. Если
+                              пес делает вид, что не слышит команды – сразу наказывайте. Дозируйте ласку. Нельзя
+                              чрезмерно
+                              баловать и жалеть собаку при неправильном поведении. Ласка должна быть наградой за
+                              правильное
+                              и хорошее поведение. Если вы сами начали обучение питомца и поняли, что не справляетесь,
+                              обратитесь к профессионалам.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="connect" id="connect">
+      <div class="container">
+         <div class="connect-inner">
+            <div class="connect-row">
+
+               <div class="connect-row__item">
+                  <div class="connect-row__item-inner connect-row__item-inner--start">
+                     <div class="connect-row__img-wrap">
+                        <a href="">
+                           <img src="./img/connect/mail.svg" alt="Адрес электронной почты">
+                        </a>
+                     </div>
+                     <a class="connect-row__item-text connect-row__item-text--accent">shelter@fourpaws.com</a>
+                  </div>
+               </div>
+               <!-- ------------------------ -->
+               <div class="connect-row__item connect-row__item">
+                  <div class="connect-row__item-inner connect-row__item-inner--active">
+                     <div class="connect-row__img-wrap connect-row__img-wrap--big">
+                        <a href="">
+                           <img src="./img/connect/phone.svg" alt="Номер телефона">
+                        </a>
+                     </div>
+                     <div class="connect-row__item-info">
+                        <a class="connect-row__item-number">8 800 500 50 00</a>
+                        <div class="connect-row__item-time">
+                           <p>Ежедневно с 09:00 до 20:00</p>
+                        </div>
+                        <div class="connect-row__item-soc">
+                           <div class="connect-row__soc-link">
+                              <a href="">
+                                 <svg class="connect-row__soc-svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M16.8503 0H7.14973C3.20735 0 0 3.20735 0 7.14973V16.8503C0 20.7926 3.20735 24 7.14973 24H16.8503C20.7926 24 24 20.7926 24 16.8503V7.14973C24 3.20735 20.7926 0 16.8503 0ZM21.5856 16.8503C21.5856 19.4655 19.4655 21.5856 16.8503 21.5856H7.14973C4.5345 21.5856 2.4144 19.4655 2.4144 16.8503V7.14973C2.4144 4.53446 4.5345 2.4144 7.14973 2.4144H16.8503C19.4655 2.4144 21.5856 4.53446 21.5856 7.14973V16.8503Z" />
+                                    <path
+                                       d="M12 5.79297C8.57729 5.79297 5.79272 8.57754 5.79272 12.0002C5.79272 15.4228 8.57729 18.2074 12 18.2074C15.4227 18.2074 18.2072 15.4229 18.2072 12.0002C18.2072 8.57749 15.4227 5.79297 12 5.79297ZM12 15.7931C9.90523 15.7931 8.20712 14.095 8.20712 12.0002C8.20712 9.90547 9.90527 8.20737 12 8.20737C14.0947 8.20737 15.7928 9.90547 15.7928 12.0002C15.7928 14.0949 14.0947 15.7931 12 15.7931Z" />
+                                    <path
+                                       d="M18.2193 7.32683C19.0408 7.32683 19.7067 6.6609 19.7067 5.83944C19.7067 5.01798 19.0408 4.35205 18.2193 4.35205C17.3979 4.35205 16.7319 5.01798 16.7319 5.83944C16.7319 6.6609 17.3979 7.32683 18.2193 7.32683Z" />
+                                 </svg>
+                              </a>
+                           </div>
+                           <div class="connect-row__soc-link">
+                              <a href="">
+                                 <svg class="connect-row__soc-svg" width="24" height="16" viewBox="0 0 24 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                       d="M23.4493 1.77506C23.6161 1.213 23.4493 0.799988 22.6553 0.799988H20.0297C19.3621 0.799988 19.0543 1.15677 18.8874 1.55019C18.8874 1.55019 17.5521 4.83823 15.6606 6.97402C15.0487 7.59227 14.7705 7.78898 14.4367 7.78898C14.2698 7.78898 14.0282 7.59227 14.0282 7.03025V1.77506C14.0282 1.10058 13.8345 0.799988 13.2781 0.799988H9.15213C8.73494 0.799988 8.48403 1.11303 8.48403 1.40971C8.48403 2.0491 9.42974 2.19655 9.52722 3.99516V7.90144C9.52722 8.75788 9.37413 8.91316 9.04032 8.91316C8.15023 8.91316 5.98507 5.61043 4.70093 1.83124C4.44927 1.0967 4.19686 0.799988 3.52583 0.799988H0.900217C0.150043 0.799988 0 1.15677 0 1.55019C0 2.25278 0.89014 5.73753 4.14464 10.3464C6.31429 13.4938 9.37118 15.2 12.1528 15.2C13.8218 15.2 14.0283 14.821 14.0283 14.1683V11.7895C14.0283 11.0316 14.1864 10.8803 14.7149 10.8803C15.1043 10.8803 15.7719 11.077 17.3296 12.5946C19.1099 14.3931 19.4034 15.2 20.4047 15.2H23.0304C23.7805 15.2 24.1556 14.821 23.9392 14.0732C23.7024 13.3279 22.8525 12.2465 21.7247 10.9646C21.1127 10.2339 20.1947 9.44711 19.9165 9.05359C19.5271 8.54781 19.6384 8.32293 19.9165 7.87333C19.9165 7.87333 23.1155 3.32068 23.4493 1.77506Z" />
+                                 </svg>
+
+                              </a>
+                           </div>
+                           <div class="connect-row__soc-link">
+                              <a href="">
+                                 <svg class="connect-row__soc-svg" width="24" height="22" viewBox="0 0 24 22"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M23.5468 0.496949C23.1374 0.153508 22.4944 0.104368 21.8295 0.368429H21.8285C21.1292 0.64599 2.03537 8.74817 1.25808 9.0792C1.11671 9.12779 -0.118008 9.58356 0.00917513 10.5988C0.122712 11.5141 1.11507 11.8931 1.23625 11.9369L6.09049 13.5812C6.41255 14.6418 7.59977 18.5546 7.86233 19.3905C8.02608 19.9116 8.293 20.5964 8.7608 20.7373C9.17128 20.8939 9.57957 20.7508 9.84376 20.5456L12.8116 17.8224L17.6025 21.5187L17.7166 21.5862C18.0419 21.7287 18.3536 21.8 18.6511 21.8C18.8809 21.8 19.1014 21.7574 19.3121 21.672C20.0299 21.3804 20.317 20.7038 20.347 20.6271L23.9256 2.22549C24.144 1.24269 23.8405 0.74265 23.5468 0.496949ZM10.3716 14.2389L8.73405 18.5589L7.0965 13.1589L19.6511 3.97888L10.3716 14.2389Z" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ---------------------- -->
+               <div class="connect-row__item">
+                  <div class="connect-row__item-inner">
+                     <div class="connect-row__img-wrap">
+                        <a href="">
+                           <img src="./img/connect/maps.svg" alt="">
+                        </a>
+                     </div>
+                     <a class="connect-row__item-text">Москва, ул. Лермонтова 60,</br> строение 2</a>
+                  </div>
+               </div>
+
+               <div class="connect-row__item-soc--bottom">
+                  <div class="connect-row__soc-link">
+                     <a href="">
+                        <svg class="connect-row__soc-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M16.8503 0H7.14973C3.20735 0 0 3.20735 0 7.14973V16.8503C0 20.7926 3.20735 24 7.14973 24H16.8503C20.7926 24 24 20.7926 24 16.8503V7.14973C24 3.20735 20.7926 0 16.8503 0ZM21.5856 16.8503C21.5856 19.4655 19.4655 21.5856 16.8503 21.5856H7.14973C4.5345 21.5856 2.4144 19.4655 2.4144 16.8503V7.14973C2.4144 4.53446 4.5345 2.4144 7.14973 2.4144H16.8503C19.4655 2.4144 21.5856 4.53446 21.5856 7.14973V16.8503Z" />
+                           <path
+                              d="M12 5.79297C8.57729 5.79297 5.79272 8.57754 5.79272 12.0002C5.79272 15.4228 8.57729 18.2074 12 18.2074C15.4227 18.2074 18.2072 15.4229 18.2072 12.0002C18.2072 8.57749 15.4227 5.79297 12 5.79297ZM12 15.7931C9.90523 15.7931 8.20712 14.095 8.20712 12.0002C8.20712 9.90547 9.90527 8.20737 12 8.20737C14.0947 8.20737 15.7928 9.90547 15.7928 12.0002C15.7928 14.0949 14.0947 15.7931 12 15.7931Z" />
+                           <path
+                              d="M18.2193 7.32683C19.0408 7.32683 19.7067 6.6609 19.7067 5.83944C19.7067 5.01798 19.0408 4.35205 18.2193 4.35205C17.3979 4.35205 16.7319 5.01798 16.7319 5.83944C16.7319 6.6609 17.3979 7.32683 18.2193 7.32683Z" />
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="connect-row__soc-link">
+                     <a href="">
+                        <svg class="connect-row__soc-svg" width="24" height="24" viewBox="0 0 24 16" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M23.4493 1.77506C23.6161 1.213 23.4493 0.799988 22.6553 0.799988H20.0297C19.3621 0.799988 19.0543 1.15677 18.8874 1.55019C18.8874 1.55019 17.5521 4.83823 15.6606 6.97402C15.0487 7.59227 14.7705 7.78898 14.4367 7.78898C14.2698 7.78898 14.0282 7.59227 14.0282 7.03025V1.77506C14.0282 1.10058 13.8345 0.799988 13.2781 0.799988H9.15213C8.73494 0.799988 8.48403 1.11303 8.48403 1.40971C8.48403 2.0491 9.42974 2.19655 9.52722 3.99516V7.90144C9.52722 8.75788 9.37413 8.91316 9.04032 8.91316C8.15023 8.91316 5.98507 5.61043 4.70093 1.83124C4.44927 1.0967 4.19686 0.799988 3.52583 0.799988H0.900217C0.150043 0.799988 0 1.15677 0 1.55019C0 2.25278 0.89014 5.73753 4.14464 10.3464C6.31429 13.4938 9.37118 15.2 12.1528 15.2C13.8218 15.2 14.0283 14.821 14.0283 14.1683V11.7895C14.0283 11.0316 14.1864 10.8803 14.7149 10.8803C15.1043 10.8803 15.7719 11.077 17.3296 12.5946C19.1099 14.3931 19.4034 15.2 20.4047 15.2H23.0304C23.7805 15.2 24.1556 14.821 23.9392 14.0732C23.7024 13.3279 22.8525 12.2465 21.7247 10.9646C21.1127 10.2339 20.1947 9.44711 19.9165 9.05359C19.5271 8.54781 19.6384 8.32293 19.9165 7.87333C19.9165 7.87333 23.1155 3.32068 23.4493 1.77506Z" />
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="connect-row__soc-link">
+                     <a href="">
+                        <svg class="connect-row__soc-svg" width="24" height="24" viewBox="0 0 24 22" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M23.5468 0.496949C23.1374 0.153508 22.4944 0.104368 21.8295 0.368429H21.8285C21.1292 0.64599 2.03537 8.74817 1.25808 9.0792C1.11671 9.12779 -0.118008 9.58356 0.00917513 10.5988C0.122712 11.5141 1.11507 11.8931 1.23625 11.9369L6.09049 13.5812C6.41255 14.6418 7.59977 18.5546 7.86233 19.3905C8.02608 19.9116 8.293 20.5964 8.7608 20.7373C9.17128 20.8939 9.57957 20.7508 9.84376 20.5456L12.8116 17.8224L17.6025 21.5187L17.7166 21.5862C18.0419 21.7287 18.3536 21.8 18.6511 21.8C18.8809 21.8 19.1014 21.7574 19.3121 21.672C20.0299 21.3804 20.317 20.7038 20.347 20.6271L23.9256 2.22549C24.144 1.24269 23.8405 0.74265 23.5468 0.496949ZM10.3716 14.2389L8.73405 18.5589L7.0965 13.1589L19.6511 3.97888L10.3716 14.2389Z" />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer class="footer">
+      <div class="container">
+         <div class="footer-column">
+            <div class="footer-column__item">
+               <p> © Четыре лапы 2022</p>
+            </div>
+            <div class="footer-column__item">
+               <a class="footer-column__item-link" href="">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-column__item">
+               <p> Разработка и маркетинг WebCanape</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>

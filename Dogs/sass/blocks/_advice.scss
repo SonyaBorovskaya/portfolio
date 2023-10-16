@@ -1,0 +1,48 @@
+
+.advice-inner{
+   padding-bottom:100px;
+}
+.advice__title{
+   margin-bottom:67px;
+}
+.advice-items{
+   display:flex; 
+   flex-direction: column;
+&:not(:last-child)>div{
+   margin-bottom: 70px;
+  }
+}
+// ------------------------------
+@media(max-width:800px){
+   .advice-inner{
+      padding-bottom:56px;
+   }
+   .advice__title{
+      margin-bottom:40px;
+   }
+}
+@media(max-width:480px){
+   .advice__title {
+      margin-bottom: 30px;
+    }
+}
+// --------------------------------
+@media(max-width:380px){
+   .advice-inner{
+      padding-bottom:30px;
+   }
+   .advice-items{
+      margin-left:-34px;
+      margin-right:-34px;
+   }
+   .advice-items{
+      margin-left:0px;
+      margin-right:0px;
+   }
+}
+// ----------------------------------
+@media(max-width:340px){
+   .advice__title {
+      margin-bottom: 22px;
+    }
+}

@@ -1,0 +1,89 @@
+.pets-column{
+border-radius: 30px;
+background-color:$add-color;
+
+&__inner{
+   text-align: center;
+}
+
+&__col{
+display: flex;
+flex-direction: column;
+
+}
+
+&__info{
+   padding:40px 40px 47px 40px;
+
+}
+&__subtext{
+   @include FontCSS (14px,$accent-color , 600,143%, 0);
+   margin-bottom:18px;
+}
+&__name{
+   @include FontCSS (30px,$grey-color, 600,133%, 0);
+   margin-bottom:16px;
+   text-transform:capitalize;
+
+}
+&__description{
+   @include FontCSS (14px,$grey-color, 500,143%, 0);
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   column-gap: 26px;
+   p{
+     font-weight: 300;
+      margin:0;
+   }
+   
+}
+&__age{
+   position: relative;
+}
+
+&__gender{
+   text-transform:capitalize;
+}
+&__img-wrapper{
+   position: relative;
+   padding-bottom:86%;
+}
+&__img{
+   position:absolute;
+   bottom:0; 
+   left:0;
+   width:100%;
+   height:100%;
+   object-fit: cover;
+}
+}
+.pets-column__subtext::first-letter{
+   text-transform: uppercase;
+}
+.pets-column__age::after{
+   content:'';
+   height:16px;
+   width:1px;
+   background-color:#CCCCCC;
+   position: absolute;
+   right:-13px;
+   top:0;
+   margin-left:13px;
+}
+@media(max-width:768px){
+   .pets-column{
+      &__subtext{
+         margin-bottom:10px;
+      }
+   }
+   .pets-column__name{
+      margin-bottom:10px;
+   }
+
+}
+@media(max-width:340px){
+   .pets-column__info {
+      padding: 30px 50px 27px 50px;
+    }
+}

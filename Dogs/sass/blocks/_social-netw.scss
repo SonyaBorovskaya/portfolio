@@ -1,0 +1,30 @@
+.header-menu__contacts{
+   @include Flex;
+   li+li{
+      margin-left:30px;
+   }
+   & .contact-icon{
+      width: 24px;
+      height: 24px;
+      fill: $main-color;
+      transition: fill ease-out 0.2s;
+   }
+}
+
+.contact-icon:hover{ 
+   fill:#FFB0C3;
+}
+
+.contacts--grey{
+
+}
+@media(max-width:959px){
+.header-menu__contacts li + li {
+   margin-left: 20px;
+ }
+}
+@media(max-width:860px){
+   .header-menu__contacts li + li {
+      margin-left: 16px;
+    }
+}

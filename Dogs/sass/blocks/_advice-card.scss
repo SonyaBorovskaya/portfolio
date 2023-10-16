@@ -1,0 +1,116 @@
+.advice-item{
+   flex-basis: 100%;
+   &+&{
+      padding-top:70px;
+   }
+}
+
+.advice-item__row{
+   display:flex;
+ }
+
+ .advice-item:nth-child(even) .advice-item__row{
+   flex-direction: row-reverse;
+   & .advice-item__img-wrapper{
+      margin-left:80px;
+      margin-right:0px;
+   }
+ }
+.advice-item__img-wrapper{
+   border-radius: 30px;
+  max-width: 550px;
+  min-width:300px;
+  margin-right:80px;
+  overflow: hidden;
+}
+.advice-item__img{
+   width:100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 30px;
+}
+.advice-item__text{
+   max-width: 550px;
+   text-align: left;
+}
+.advice-item__heading{
+   font-size:30px;
+   color: #444444; 
+   font-weight:600;
+   line-height:40px;
+   margin-bottom: 29px;
+}
+.advice-item__description{
+   @include FontCSS(16px,#444444,300,162%,0);
+}
+@media(max-width:800px){
+   .advice-item__row{
+ flex-direction:column;
+ justify-content:center;
+   }
+ .advice-item{
+   margin:0 auto;
+   &+&{
+      padding-top:0px;
+   }
+ }
+   }
+   .advice-item:nth-child(even) .advice-item__row{
+      flex-direction: column;
+    }
+    .advice-item__img-wrapper,.advice-item__text
+   {margin:0 auto;}
+    .advice-item__heading{
+      margin-bottom: 20px;
+   }
+   .advice-item:nth-child(2n) .advice-item__row .advice-item__img-wrapper{
+      margin-left:auto;
+      margin-right:auto;
+   }
+   .advice-item__img-wrapper{
+      margin-bottom:37px;
+       margin-left:auto;
+   }
+   .advice-item__description{
+      margin-bottom:61px;
+   }
+   .advice-item:nth-child(3){
+      & .advice-item__description{
+         margin-bottom:0px;
+      }
+   }
+
+@media(max-width:480px){
+   .advice-item__img-wrapper {
+      margin-bottom: 30px;
+      margin-left: auto;
+    }
+    .advice-item__heading{
+      font-size:25px;
+    }
+    .advice-items+.advice-items{
+      padding-top:55px;
+    }
+.advice-item__row{
+   padding-bottom:0px
+}
+.advice-item__description{
+   margin-bottom:30px;
+      }
+}
+@media(max-width:340px){
+   .advice-item__img-wrapper {
+      margin-bottom: 12px;
+    }
+    .advice-item__heading{
+      margin-bottom:14px;
+      font-size:20px;
+      line-height:130%;
+    }
+    .advice-item__description{
+      font-size:14px;
+    }
+    .advice-items > div{
+      margin-bottom:30px;
+    }
+}
