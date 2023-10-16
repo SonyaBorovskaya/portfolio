@@ -1,0 +1,27 @@
+.container{
+	padding: 64px 15px 0px 15px;}
+
+.ui{
+input{
+	height: 40px;}
+	.header{
+		text-align: center;
+	}
+}
+.inputs{
+	label{
+		text-align: center;
+		font-size: 15px;
+		font-weight: 300;
+		color: blue;}
+	display:flex; 
+	flex-direction: column;
+}
+.otch_form{
+	display: flex;
+	flex: row;
+	align-items: center;
+	column-gap: 15px;
+}
+.button{
+	margin-top: 27px;}

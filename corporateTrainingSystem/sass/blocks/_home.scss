@@ -1,0 +1,21 @@
+.home-body{
+background: url("../img/main/main.jpg");
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+font-family:'Roboto', sans-serif;
+position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+background-color: rgba(0, 0, 0, 0.6);
+font-size: 14px;
+  font-weight: 300;
+  a{ color: #2f2f2f;
+	text-decoration: none;
+	cursor: pointer;
+
+}
+}

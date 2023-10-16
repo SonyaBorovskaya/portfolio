@@ -1,0 +1,216 @@
+body {
+   margin: 0;
+   padding: 25px;
+   color: #494b4d;
+   font-size: 14px;
+   line-height: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ h1, h2, h3 {
+   margin: 0 0 10px 0;
+   color: #1d97bf;
+ }
+ 
+ h1 {
+   font-size: 25px;
+   line-height: 30px;
+ }
+ 
+ h2 {
+   font-size: 20px;
+   line-height: 25px;
+ }
+ 
+ h3 {
+   font-size: 16px;
+   line-height: 20px;
+ }
+ 
+ table {
+   margin-bottom: 30px;
+ }
+ 
+ a {
+   color: #ff6680;
+   text-decoration: none;
+ }
+ 
+ code {
+   background: #fffbcc;
+   font-size: 12px;
+ }
+.rtable {
+
+   display: inline-block;
+   vertical-align: top;
+   max-width: 100%;
+   overflow-x: auto;
+   white-space: nowrap;
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+ 
+ .rtable,
+ .rtable--flip tbody {
+   -webkit-overflow-scrolling: touch;
+   background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+               radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+   background-size: 10px 100%, 10px 100%;
+   background-attachment: scroll, scroll;
+   background-repeat: no-repeat;
+ }
+ 
+ .rtable td:first-child,
+ .rtable--flip tbody tr:first-child {
+   background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+   background-repeat: no-repeat;
+   background-size: 20px 100%;
+ }
+ 
+ .rtable td:last-child,
+ .rtable--flip tbody tr:last-child {
+   background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+   background-repeat: no-repeat;
+   background-position: 100% 0;
+   background-size: 20px 100%;
+ }
+ 
+ .rtable th {
+   font-size: 11px;
+   text-align: left;
+   text-transform: uppercase;
+   background: #f2f0e6;
+ }
+ 
+ .rtable th,
+ .rtable td {
+   padding: 6px 12px;
+   border: 1px solid #d9d7ce;
+ }
+ 
+ .rtable--flip {
+   display: flex;
+   overflow: hidden;
+   background: none;
+ }
+ 
+ .rtable--flip thead {
+   display: flex;
+   flex-shrink: 0;
+   min-width: min-content;
+ }
+ 
+ .rtable--flip tbody {
+   display: flex;
+   position: relative;
+   overflow-x: auto;
+   overflow-y: hidden;
+ }
+ 
+ .rtable--flip tr {
+   display: flex;
+   flex-direction: column;
+   min-width: min-content;
+   flex-shrink: 0;
+ }
+ 
+ .rtable--flip td,
+ .rtable--flip th {
+   display: block;
+ }
+ 
+ .rtable--flip td {
+   background-image: none !important;
+   // border-collapse is no longer active
+   border-left: 0;
+ }
+ 
+ .rtable--flip th:not(:last-child),
+ .rtable--flip td:not(:last-child) {
+   border-bottom: 0;
+ }
+ .returnOtchetsBtn{
+   padding:10px 15px; 
+   background-color:#F2F0E6;
+width:170px;
+   border:#bbbbba;
+   font-size:17px;
+   text-align: center;
+ }
+ .returnOtchets{
+   margin-top:30px;
+   margin-bottom: 40px;
+ }
+
+ /* ---------------------------Главная страница отчетов и справочников */
+ .otchetsHeader{
+display: flex;
+align-items: center;
+
+ }
+ .logo__img{
+   width:57px;
+ }
+ .otchetsHeaderNav{
+   padding-left:70px;
+ }
+ .otchetsHeaderNav div+div{
+   padding-top:13px;
+ }
+ .returnMainBtn{
+font-size:17px;
+font-weight: 600;
+ }
+ .otchetsTitle{
+   font-size: 20px;
+font-weight: 600;
+margin-bottom: 12px;
+margin-top:15px;
+ }
+ .otchetsItems{
+   padding-top:15px;
+ }
+ .otchetsList{
+   margin-bottom: 8px;
+ }
+ .otchetsItem{
+   font-size: 17px;
+ }
+
+ /*  ---------------------------Конец главная страница отчетов и справочников */ 
+ 
+ /* ---------------Report Card --------------- */
+ .form input+input{
+   margin-left:12px;
+ }
+ .form input {
+   font-family: "Roboto", sans-serif;
+   outline: 0;
+   background: #f2f2f2;
+   width: 170px;
+   border: 0;
+   margin: 0 0 15px;
+   padding: 15px;
+   box-sizing: border-box;
+   font-size: 14px;
+ }
+.form .searchBtn{
+   font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 170px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+ }
+ .searchBtn:hover, .searchBtn:active, .searchBtn:focus{
+   background: #43A047;
+ }
+
+  /* ---------------//Report Card --------------- */
