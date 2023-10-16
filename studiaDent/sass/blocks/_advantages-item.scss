@@ -1,0 +1,20 @@
+.advantages-item{
+   display: flex;
+   align-items:center;
+   column-gap: 18px;
+	flex-direction: column;
+	justify-content
+
+   img{
+      width:40px;
+      height:40px;
+   }
+   & .advantages-item__text{
+display: inline-block;
+max-width:300px;
+font-size: 18px;
+text-align: center;
+color:#12354B;
+   }
+}
+

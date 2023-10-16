@@ -1,0 +1,26 @@
+.menu-items{
+   display:flex; 
+   justify-content:space-between;
+   flex-direction: row;
+   align-items: center;
+   
+
+}
+.menu-lists{
+   display: flex;
+
+
+   li+li{
+      margin-left:35px;
+   }
+   a{
+      
+      color:#474747;
+		font-weight: 400;
+      transition: all 0.2s ease-out;
+   }
+   a:hover{
+    color:$accent-link-hover;
+   }
+
+}

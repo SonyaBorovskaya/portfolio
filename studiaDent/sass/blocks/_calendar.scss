@@ -1,0 +1,31 @@
+.calendar-items{
+   display:grid;
+   grid-template-columns: 24px auto;
+   
+   column-gap: 6px;
+}
+
+.calendar-img_item{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 3;
+}
+.calendar-item1{
+   grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+.calendar-item2{
+   grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 3;
+}
+.calendar-item3{
+   grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 3;
+grid-row-end: 4;
+}
